@@ -1,6 +1,6 @@
 OpenID Connect project playground environment
 =
-We have created a platground environment for you to try out the latest developments in the OIDC project.
+We have created a playground environment for you to try out the latest developments in the OIDC project.
 
 As a recap, a key goal of the project is to allow Matrix Homeservers to delegate auth to a separate server (using the OIDC standard) which would replace the current auth system built into the Homeserver.
 
@@ -20,7 +20,7 @@ Additionally, you can try using the client compatibility layer with:
 
 The compatibility layer works best with a client that supports SSO (login and register are supported) but otherwise you can login using password (having registered using another client or directly on the auth server at https://auth-oidc.lab.element.dev).
 
-Auth Server / OIDC Provider
+Auth Server/OIDC Provider
 ==
 
 Currently you can only register with a username/password (SSO/social login and others are to come).
