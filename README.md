@@ -20,16 +20,17 @@ Additionally, you can try using the client compatibility layer with:
 
 The compatibility layer works best with a client that supports SSO (login and register are supported) but otherwise you can login using password (having registered using another client or directly on the auth server at https://auth-oidc.lab.element.dev).
 
-Auth Server/OIDC Provider
+Homeservers + OIDC Providers to try
 ==
 
-Currently you can only register with a username/password (SSO/social login and others are to come).
-
-- [Account management](https://auth-oidc.lab.element.dev/account)
-
-Homeserver
-==
-
-The playground is running a patched synapse instance that delegates to OIDC. It isn't federated so you can't access your regular Matrix rooms.
+The homeservers in the playground tun a patched version of synapse that delegates to OIDC. They aren't federated so you can't access your regular Matrix rooms.
 
 We may also need to reset the playground in future so don't use it for anything important!
+
+The following homeserver + OIDC Provider combinations are available to try out:
+
+| Address | Homeserver | OIDC Provider | Supports legacy clients? | Notes |
+| - | - | - | - | - |
+| `synapse-oidc.lab.element.dev` | Synapse | [Matrix Authentication Service](https://github.com/matrix-org/matrix-authentication-service) | ✅ | Currently you can only register with a username/password (SSO/social login and others are to come) |
+| `synapse-okta-oidc.lab.element.dev` | Synapse | [okta.com](https://okta.com) | ❌ | |
+| `synapse-auth0-oidc.lab.element.dev` | Synapse | [auth0.com](https://auth0.com) | ❌ | |
