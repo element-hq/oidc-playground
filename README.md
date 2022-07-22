@@ -34,3 +34,4 @@ The following homeserver + OIDC Provider combinations are available to try out:
 | `synapse-oidc.lab.element.dev` | Synapse | [Matrix Authentication Service](https://github.com/matrix-org/matrix-authentication-service) | ✅ | Currently you can only register with a username/password (SSO/social login and others are to come) |
 | `synapse-okta-oidc.lab.element.dev` | Synapse | [okta.com](https://okta.com) | ❌ | Dynamic Client Registration doesn't work |
 | `synapse-auth0-oidc.lab.element.dev` | Synapse | [auth0.com](https://auth0.com) | ❌ | |
+| `synapse-keycloak-oidc.lab.element.dev` | Synapse | [Keycloak](https://www.keycloak.org) | ❌ | |
