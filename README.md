@@ -39,3 +39,11 @@ The following homeserver + OIDC Provider combinations are available to try out:
 | `synapse-okta-oidc.lab.element.dev` | Synapse | [okta.com](https://okta.com) | ❌ | Dynamic Client Registration doesn't work |
 | `synapse-auth0-oidc.lab.element.dev` | Synapse | [auth0.com](https://auth0.com) | ❌ | |
 | `synapse-keycloak-oidc.lab.element.dev` | Synapse | [Keycloak](https://www.keycloak.org) | ❌ | |
+
+Limitations
+==
+
+Notable limitations:
+
+- UIA protected Homeserver API endpoints don't work
+- Logout isn't fully implemented on the OIDC native clients
