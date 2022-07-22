@@ -11,8 +11,12 @@ Clients/Applications to try
 
 You can use one of these to register and login using OIDC natively:
 
-- [Hydrogen](https://hydrogen-oidc.lab.element.dev/)
-- [Files SDK Demo](https://files-sdk-demo-oidc.lab.element.dev/)
+| Client | Supports Device Flow?* |
+| - | - |
+| [Hydrogen](https://hydrogen-oidc.lab.element.dev/) | ❌ |
+| [Files SDK Demo](https://files-sdk-demo-oidc.lab.element.dev/) | ✅ |
+
+\* allows sign in to be completed by scanning QR code on another device
 
 Additionally, you can try using the client compatibility layer with:
 - [Element Web](https://element-oidc.lab.element.dev/) - this build has some minimal changes to at least be aware of OIDC
