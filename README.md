@@ -15,6 +15,7 @@ We may also need to reset the playground in future so don't use it for anything 
 
 The following homeserver + OIDC Provider combinations are available to try out:
 
+<a name="homeservers-table"></a>
 | Address | Homeserver | OIDC Provider | Supports Device Flow?\* | Supports legacy clients?\*\* | Supports open client registration?\*\*\* | Notes |
 | - | - | - | - | - | - | - |
 | `synapse-oidc.lab.element.dev` | Synapse | [Matrix Authentication Service](https://github.com/matrix-org/matrix-authentication-service) | ❌ | ✅ | ✅ | Currently you can only register with a username/password (SSO/social login and others are to come) |
@@ -33,6 +34,7 @@ Clients/Applications to try
 
 You can use one of these to register and login using OIDC natively:
 
+<a name="clients-table"></a>
 | Client | Supports Device Flow?* | Configured with static client ID for `synapse-okta` and `synapse-keycloak`? | 
 | - | - | - |
 | [Hydrogen](https://hydrogen-oidc.lab.element.dev/) | ❌ | ❌ |
