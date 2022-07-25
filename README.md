@@ -11,10 +11,10 @@ Clients/Applications to try
 
 You can use one of these to register and login using OIDC natively:
 
-| Client | Supports Device Flow?* |
-| - | - |
-| [Hydrogen](https://hydrogen-oidc.lab.element.dev/) | ❌ |
-| [Files SDK Demo](https://files-sdk-demo-oidc.lab.element.dev/) | ✅ |
+| Client | Supports Device Flow?* | Configured with static client ID for `synapse-okta` and `synapse-keycloak`? | 
+| - | - | - |
+| [Hydrogen](https://hydrogen-oidc.lab.element.dev/) | ❌ | ❌ |
+| [Files SDK Demo](https://files-sdk-demo-oidc.lab.element.dev/) | ✅ | ✅ |
 
 \* allows sign in to be completed by scanning QR code on another device
 
@@ -27,7 +27,7 @@ The compatibility layer works best with a client that supports SSO (login and re
 Homeservers + OIDC Providers to try
 ==
 
-The homeservers in the playground tun a patched version of synapse that delegates to OIDC. They aren't federated so you can't access your regular Matrix rooms.
+The homeservers in the playground run a patched version of synapse that delegates to OIDC. They aren't federated so you can't access your regular Matrix rooms.
 
 We may also need to reset the playground in future so don't use it for anything important!
 
