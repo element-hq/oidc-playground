@@ -35,7 +35,7 @@ Clients/Applications to try
 You can use one of these to register and login using OIDC natively:
 
 <a name="clients-table"></a>
-| Client | Supports Device Flow?* | Configured with static client ID for `synapse-okta` and `synapse-keycloak`? | 
+| Client | Supports QR login via Device Flow?* | Configured with static client ID for `synapse-okta` and `synapse-keycloak`? | 
 | - | - | - |
 | [Hydrogen](https://hydrogen-oidc.lab.element.dev/) | ❌ | ❌ |
 | [Files SDK Demo](https://files-sdk-demo-oidc.lab.element.dev/) | ✅ | ✅ |
