@@ -6,24 +6,6 @@ As a recap, a key goal of the project is to allow Matrix Homeservers to delegate
 
 This means that rather than registering a user directly on a Homeserver instead you do the registration on an OIDC Provider (auth server).
 
-Clients/Applications to try
-==
-
-You can use one of these to register and login using OIDC natively:
-
-| Client | Supports Device Flow?* | Configured with static client ID for `synapse-okta` and `synapse-keycloak`? | 
-| - | - | - |
-| [Hydrogen](https://hydrogen-oidc.lab.element.dev/) | ❌ | ❌ |
-| [Files SDK Demo](https://files-sdk-demo-oidc.lab.element.dev/) | ✅ | ✅ |
-
-\* allows sign in to be completed by scanning QR code on another device
-
-Additionally, you can try using the client compatibility layer with:
-- [Element Web](https://element-oidc.lab.element.dev/) - this build has some minimal changes to at least be aware of OIDC
-- Or any other client connecting using homeserver: `synapse-oidc.lab.element.dev`
-
-The compatibility layer works best with a client that supports SSO (login and register are supported) but otherwise you can login using password (having registered using another client or directly on the auth server at https://auth-oidc.lab.element.dev).
-
 Homeservers + OIDC Providers to try
 ==
 
@@ -43,6 +25,24 @@ The following homeserver + OIDC Provider combinations are available to try out:
 \*\* "legacy" means a client that is not OIDC-native
 
 \*\*\* if open client registration is supported it means that any client can register to use the OP. Open client registration is like how non-OIDC-enabled Homeservers operate today.
+
+Clients/Applications to try
+==
+
+You can use one of these to register and login using OIDC natively:
+
+| Client | Supports Device Flow?* | Configured with static client ID for `synapse-okta` and `synapse-keycloak`? | 
+| - | - | - |
+| [Hydrogen](https://hydrogen-oidc.lab.element.dev/) | ❌ | ❌ |
+| [Files SDK Demo](https://files-sdk-demo-oidc.lab.element.dev/) | ✅ | ✅ |
+
+\* allows sign in to be completed by scanning QR code on another device
+
+Additionally, you can try using the client compatibility layer with:
+- [Element Web](https://element-oidc.lab.element.dev/) - this build has some minimal changes to at least be aware of OIDC
+- Or any other client connecting using homeserver: `synapse-oidc.lab.element.dev`
+
+The compatibility layer works best with a client that supports SSO (login and register are supported) but otherwise you can login using password (having registered using another client or directly on the auth server at https://auth-oidc.lab.element.dev).
 
 Limitations
 ==
