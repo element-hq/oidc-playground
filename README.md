@@ -51,3 +51,14 @@ Notable limitations:
 
 - UIA protected Homeserver API endpoints don't work
 - Logout isn't fully implemented on the OIDC native clients
+
+Login with QR code
+==
+
+You can try out a prototype of how the [RFC8628](https://datatracker.ietf.org/doc/html/rfc8628) OIDC device authorization grant (aka "device flow") can be used to allow login on a device using a second device.
+
+To try this out right now you will need to use the Files SDK Demo client talking to the `synapse-keycloak` homeserver.
+
+![Device Flow demo 2](https://user-images.githubusercontent.com/6955675/180743561-e2e158cd-2caf-4e43-9eed-9e86da84597c.gif)
+
+This prototype doesn't help with E2EE setup and cross-signing (yet).
