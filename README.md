@@ -32,17 +32,16 @@ The following homeserver + OIDC Provider combinations are available to try out:
 Clients/Applications to try
 ==
 
-You can use one of these to register and login using OIDC natively:
+TYou can use one of these to register and login on one or more of the OIDC enabled homeservers:
 
 <a name="clients-table"></a>
-| Client | Supports QR login via Device Flow?* | Configured with static client ID for `synapse-okta` and `synapse-keycloak`? | 
-| - | - | - |
-| [Hydrogen](https://hydrogen-oidc.lab.element.dev/) | ❌ | ❌ |
-| [Files SDK Demo](https://files-sdk-demo-oidc.lab.element.dev/) | ✅ | ✅ |
+| Client | Implementation type | Supports QR login via Device Flow?* | Configured with static client ID for `synapse-okta` and `synapse-keycloak`? | 
+| - | - | - | - |
+| [Hydrogen](https://hydrogen-oidc.lab.element.dev/) | OIDC-native | ❌ | ❌ |
+| [Files SDK Demo](https://files-sdk-demo-oidc.lab.element.dev/) | OIDC-native | ✅ | ✅ |
+| [Element Web](https://element-oidc.lab.element.dev/) | OIDC-aware | n/a | n/a |
 
-Additionally, you can try using the client compatibility layer with:
-- [Element Web](https://element-oidc.lab.element.dev/) - this build has some minimal changes to at least be aware of OIDC
-- Or any other client connecting using homeserver: `synapse-oidc.lab.element.dev`
+Additionally, you can try using the client compatibility layer with any other client connecting using homeserver: `synapse-oidc.lab.element.dev`
 
 The compatibility layer works best with a client that supports SSO (login and register are supported) but otherwise you can login using password (having registered using another client or directly on the auth server at https://auth-oidc.lab.element.dev).
 
