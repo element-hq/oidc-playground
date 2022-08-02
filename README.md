@@ -37,7 +37,7 @@ TYou can use one of these to register and login on one or more of the OIDC enabl
 <a name="clients-table"></a>
 | Client | Implementation type | Supports QR login via Device Flow?* | Configured with static client ID for `synapse-okta` and `synapse-keycloak`? | 
 | - | - | - | - |
-| [Hydrogen](https://hydrogen-oidc.lab.element.dev/) | OIDC-native | ❌ | ❌ |
+| [Hydrogen](https://hydrogen-oidc.lab.element.dev/) | OIDC-native | ❌ | ✅ |
 | [Files SDK Demo](https://files-sdk-demo-oidc.lab.element.dev/) | OIDC-native | ✅ | ✅ |
 | [Element Web](https://element-oidc.lab.element.dev/) | OIDC-aware | n/a | n/a |
 
