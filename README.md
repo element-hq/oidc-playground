@@ -1,4 +1,4 @@
-OpenID Connect project playground environment
+Matrix OpenID Connect project playground environment
 =
 We have created a playground environment for you to try out the latest developments in the OIDC project.
 
