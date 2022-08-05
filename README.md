@@ -1,6 +1,9 @@
 Matrix OpenID Connect project playground environment
 =
-We have created a playground environment for you to try out the latest developments in the OIDC project.
+
+This playground environment has been setup in support of the project to migrate Matrix to OIDC as proposed in [MSC3861](https://github.com/matrix-org/matrix-spec-proposals/pull/3861).
+
+You can use the playground to try out the latest developments and also as a test bed for development.
 
 As a recap, a key goal of the project is to allow Matrix Homeservers to delegate auth to a separate server (using the OIDC standard) which would replace the current auth system built into the Homeserver.
 
