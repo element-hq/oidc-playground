@@ -54,7 +54,6 @@ Limitations
 Notable limitations:
 
 - UIA protected Homeserver API endpoints don't work
-- Logout isn't fully implemented on the OIDC native clients
 
 Login with QR code
 ==
