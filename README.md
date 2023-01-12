@@ -35,7 +35,7 @@ The following homeserver + OIDC Provider combinations are available to try out:
 Clients/Applications to try
 ==
 
-TYou can use one of these to register and login on one or more of the OIDC enabled homeservers:
+You can use one of these to register and login on one or more of the OIDC enabled homeservers:
 
 <a name="clients-table"></a>
 | Client | Implementation type | Supports QR login via Device Flow?* | Configured with static client ID for `synapse-okta` and `synapse-keycloak`? | 
