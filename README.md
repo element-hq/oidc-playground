@@ -7,19 +7,19 @@ You can use the playground to try out the latest developments and also as a test
 
 As a recap, a key goal of the project is to allow Matrix Homeservers to delegate auth to a separate server (using the OIDC standard) which would replace the current auth system built into the Homeserver.
 
-This means that rather than registering a user directly on a Homeserver instead you do the registration on an OIDC Provider (auth server).
+This means that rather than registering a user directly on a Homeserver instead you do the registration on an OpenID Provider (auth server).
 
-Homeservers + OIDC Providers to try
+Homeservers + OpenID Providers to try
 ==
 
 The homeservers in the playground run a patched version of synapse that delegates to OIDC. They aren't federated so you can't access your regular Matrix rooms.
 
 We may also need to reset the playground in future so don't use it for anything important!
 
-The following homeserver + OIDC Provider combinations are available to try out:
+The following homeserver + OpenID Provider combinations are available to try out:
 
 <a name="homeservers-table"></a>
-| Address | Homeserver | OIDC Provider | Supports Device Flow?\* | Supports legacy clients?\*\* | Supports open client registration?\*\*\* | Notes |
+| Address | Homeserver | OpenID Provider | Supports Device Flow?\* | Supports legacy clients?\*\* | Supports open client registration?\*\*\* | Notes |
 | - | - | - | - | - | - | - |
 | `synapse-oidc.lab.element.dev` | Synapse | [Matrix Authentication Service](https://github.com/matrix-org/matrix-authentication-service) | ❌ | ✅ | ✅ | Currently you can only register with a username/password (SSO/social login and others are to come) |
 | `synapse-keycloak-oidc.lab.element.dev` | Synapse | [Keycloak](https://www.keycloak.org) | ✅ | ❌ | ⚠ | CORS is currently misconfigured so client registration won't work from a web browser |
