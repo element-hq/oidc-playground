@@ -53,7 +53,7 @@ Limitations
 
 Notable limitations:
 
-- UIA protected Homeserver API endpoints don't work
+- None at the moment
 
 Login with QR code
 ==
