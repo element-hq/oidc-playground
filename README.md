@@ -42,7 +42,7 @@ You can use one of these to register and login on one or more of the OIDC enable
 | --------------------------------------------------------------------- | ------------------- | ----------------------------------- | --------------------------------------------------------------------------- |
 | [Hydrogen](https://hydrogen-oidc.lab.element.dev/)                    | OIDC-native         | ❌                                  | ✅                                                                          |
 | [Files SDK Demo](https://files-sdk-demo.client.oidc.lab.element.dev/) | OIDC-native         | ✅                                  | ✅                                                                          |
-| [Element Web](https://element-oidc.lab.element.dev/)                  | OIDC-aware          | n/a                                 | n/a                                                                         |
+| [Element Web](https://app.element.io/)                                | OIDC-aware          | n/a                                 | n/a                                                                         |
 
 Additionally, you can try using the client compatibility layer with any other client connecting using homeserver: `synapse-oidc.lab.element.dev`
 
