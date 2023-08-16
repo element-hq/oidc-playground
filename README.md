@@ -12,7 +12,7 @@ This means that rather than registering a user directly on a Homeserver instead 
 Homeservers + OpenID Providers to try
 ==
 
-The homeservers in the playground run a patched version of synapse that delegates to OIDC. They aren't federated so you can't access your regular Matrix rooms.
+The homeservers in the playground run Synapse with the experimental `msc3861` feature enabled that  delegates to OIDC. They aren't federated so you can't access your regular Matrix rooms.
 
 We may also need to reset the playground in future so don't use it for anything important!
 
