@@ -23,8 +23,6 @@ The following homeserver + OpenID Provider combinations are available to try out
 | --------------------------------------- | ---------- | ------------------ | -------------------------------------------------------------------------------------------- | ----------------------- | ---------------------------- | ---------------------------------------- | -------------------------------------------------------------------------------------------------- |
 | `synapse-oidc.lab.element.dev`          | Synapse    | ✅                 | [Matrix Authentication Service](https://github.com/matrix-org/matrix-authentication-service) | ✅                      | ✅                           | ✅                                       | Currently you can only register with a username/password (SSO/social login and others are to come) |
 | `synapse-keycloak-oidc.lab.element.dev` | Synapse    | ✅                 | [Keycloak](https://www.keycloak.org)                                                         | ✅                      | ❌                           | ⚠                                       | CORS is currently misconfigured so client registration won't work from a web browser               |
-| `synapse-okta-oidc.lab.element.dev`     | Synapse    | ❌                 | [okta.com](https://okta.com)                                                                 | ✅                      | ❌                           | ❌                                       | Currently doesn't support the correct `urn:matrix:*` scopes                                        |
-| `synapse-auth0-oidc.lab.element.dev`    | Synapse    | ❌                 | [auth0.com](https://auth0.com)                                                               | ✅                      | ❌                           | ✅                                       | Currently doesn't support the correct `urn:matrix:*` scopes                                        |
 
 \* allows sign in to be completed by scanning QR code on another device
 
@@ -38,11 +36,11 @@ Clients/Applications to try
 You can use one of these to register and login on one or more of the OIDC enabled homeservers:
 
 <a name="clients-table"></a>
-| Client                                                                | Implementation type | Supports QR login via Device Flow?* | Configured with static client ID for `synapse-okta` and `synapse-keycloak`? |
-| --------------------------------------------------------------------- | ------------------- | ----------------------------------- | --------------------------------------------------------------------------- |
-| [Hydrogen](https://hydrogen-oidc.lab.element.dev/)                    | OIDC-native         | ❌                                  | ✅                                                                          |
-| [Files SDK Demo](https://files-sdk-demo.client.oidc.lab.element.dev/) | OIDC-native         | ✅                                  | ✅                                                                          |
-| [Element Web](https://app.element.io/)                                | OIDC-aware          | n/a                                 | n/a                                                                         |
+| Client                                                                | Implementation type | Supports QR login via Device Flow?* | Configured with static client ID for `synapse-keycloak`? |
+| --------------------------------------------------------------------- | ------------------- | ----------------------------------- | -------------------------------------------------------- |
+| [Hydrogen](https://hydrogen-oidc.lab.element.dev/)                    | OIDC-native         | ❌                                  | ✅                                                       |
+| [Files SDK Demo](https://files-sdk-demo.client.oidc.lab.element.dev/) | OIDC-native         | ✅                                  | ✅                                                       |
+| [Element Web](https://app.element.io/)                                | OIDC-aware          | n/a                                 | n/a                                                      |
 
 Additionally, you can try using the client compatibility layer with any other client connecting using homeserver: `synapse-oidc.lab.element.dev`
 
