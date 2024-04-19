@@ -1,7 +1,7 @@
 Matrix OpenID Connect project playground environment
 =
 
-This playground environment has been setup in support of the project to migrate Matrix to OIDC as proposed in [MSC3861](https://github.com/matrix-org/matrix-spec-proposals/pull/3861).
+This playground environment is provided by [Element](https://element.io/) in support of the project to migrate the Matrix ecosystem to OIDC as proposed in [MSC3861](https://github.com/matrix-org/matrix-spec-proposals/pull/3861).
 
 You can use the playground to try out the latest developments and also as a test bed for development.
 
