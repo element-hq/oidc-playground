@@ -17,7 +17,7 @@ We may also need to reset the playground in future so don't use it for anything 
 The following homeserver + OpenID Provider combinations are available to try out:
 
 <a name="homeservers-table"></a>
-| Address | Homeserver | Sliding Sync Proxy | OpenID Provider | Supports Device Flow?\* | Supports legacy clients?\*\* | Supports open client registration?\*\*\* | Notes |
+| Address | Homeserver | Sliding Sync Proxy | OpenID Provider | Supports MSC4108?\* | Supports legacy clients?\*\* | Supports open client registration?\*\*\* | Notes |
 | --- | --- | --- | --- | --- | --- | --- | --- |
 | `synapse-oidc.element.dev` | Synapse | ✅ | [Matrix Authentication Service](https://github.com/matrix-org/matrix-authentication-service) | ✅ | ✅ | ✅ | Currently you can only register with a username/password (SSO/social login and others are to come) |
 | `synapse-keycloak-oidc.element.dev` | Synapse | ✅ | [Keycloak](https://www.keycloak.org) | ✅ | ❌ | ⚠ | CORS is currently misconfigured so client registration won't work from a web browser |
@@ -49,12 +49,6 @@ Notable limitations:
 
 - None at the moment
 
-# Login with QR code
+# Sign in with QR code
 
-You can try out a prototype of how the [RFC8628](https://datatracker.ietf.org/doc/html/rfc8628) OIDC device authorization grant (aka "device flow") can be used to allow login on a device using a second device.
-
-To try this out right now you will need to use the Files SDK Demo client talking to the `synapse-keycloak` homeserver.
-
-![Device Flow demo 2](https://user-images.githubusercontent.com/6955675/180743561-e2e158cd-2caf-4e43-9eed-9e86da84597c.gif)
-
-This prototype doesn't help with E2EE setup and cross-signing (yet).
+You can use the `synapse-oidc.element.dev` homeserver to try out the [MSC4108](https://github.com/matrix-org/matrix-spec-proposals/pull/4108) feature that allows you to use a QR code to sign in and cross-sign a new device.
